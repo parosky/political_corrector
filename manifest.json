@@ -1,0 +1,19 @@
+{
+  "name": "ポリティカル・コレクタ",
+  "version": "1.0",
+  "description": "問題のある表現を政治的に正しい表現に変換します",
+  "manifest_version": 2,
+  "browser_action": {
+    "default_icon": "icon_32.ico"
+  },
+  "icons": {
+    "128": "icon_128.ico",
+    "48": "icon_48.ico"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["jquery.js", "replace.js"]
+    }
+  ]
+}
